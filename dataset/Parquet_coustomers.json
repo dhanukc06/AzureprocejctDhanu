@@ -1,0 +1,20 @@
+{
+	"name": "Parquet_coustomers",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "bronze/customer",
+				"fileSystem": "dhanu1"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	}
+}
